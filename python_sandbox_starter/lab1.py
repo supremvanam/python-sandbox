@@ -1,5 +1,6 @@
 #imports and variables
 import collections
+from operator import le
 from random import randint
 
 #the following variable will be used in the rest of the exercise
@@ -86,5 +87,30 @@ print(f"The third element of this tuple is {tuple_exercise[5]}")
 # ------------------------------------------ SET ------------------------------------------
 
 # create a set from the variable 'instructor' and print it
+# pm = 'justin pierre james trudeau'
 # instructor = 'narendra pershad'
 
+set_exercise = set(instructor)
+comparision_set = set(pm)
+
+# use the add() method to add 'z' to the set and print it
+set_exercise.add("z")
+
+#use the remove() method to take ' ' from the set and print it
+set_exercise.remove(" ")
+
+# use the intersection() method to find the common elements in both sets and print the result
+print(set_exercise.intersection(comparision_set))
+
+# use the union() method to find all the elements occuring in both sets and print the result
+print(set_exercise.union(comparision_set))
+
+#use the pop() method remove and return an arbitrary elements of the set and print it
+print(set_exercise.pop())
+
+#use the update() function to add 'x', 'y' and 'z' to the set  and print the result
+print(set_exercise.update({"X", "Y", "Z"}))
+
+print(len(set_exercise))
+
+print(set_exercise)
