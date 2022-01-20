@@ -48,3 +48,21 @@ do_repetition = collections.Counter(list_exercise)["do"]
 print(f"There are {do_repetition} do's in the list")
 print(f'You can find "ask" at index {list_exercise.index("ask")} of the list')
 print(f'There are {len(list_exercise)} elements in the list')
+
+#create a tuple from the variable pm and print it
+# pm = 'justin pierre james trudeau'
+
+tuple_exercise = tuple(pm)
+print(tuple_exercise)
+
+# write the statement to produced the following lines of output
+
+## There are 4 e's in the tuple                   #use the count() method
+## You can find a at index 15 of the tuple        #use the index() method
+## There are 27 elements in the tuple             #use the len() function
+
+
+# print(tuple_exercise.count("e"))
+print("There are " + str(tuple_exercise.count("e")) + " e's in the tuple")
+print("You can find a at index " + str(tuple_exercise.index("a")) + " of the tuple")
+print(f"There are {len(tuple_exercise)} elements in the tuple")
