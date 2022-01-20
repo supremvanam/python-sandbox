@@ -182,3 +182,18 @@ dict_to_list = list(d)
 print(set_to_list)
 print(tuple_to_list)
 print(dict_to_list)
+
+
+# ------------------------------------------ ENUMERATE FUNCTION ------------------------------------------
+
+print("------------------------------------------ ENUMERATE FUNCTION ------------------------------------------")
+print(list(enumerate(set_exercise)))
+print(list(enumerate(tuple_exercise)))
+print(list(enumerate(list_exercise)))
+print(enumerate(d))
+
+print("------------------------------------------ NEW ENUMERATE FUNCTION ------------------------------------------")
+
+for position, (key, value) in enumerate(d.items()):
+    print(position, key, value)
+
