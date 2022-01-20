@@ -10,3 +10,15 @@ print(fruits[1])
 print(len(fruits))
 
 # A Set is a collection which is unordered and unindexed. No duplicate members.
+
+fruits_set = {"Apples", "Oranges", "Mango"}
+
+print("Apples" in fruits_set)
+
+# Add to set
+fruits_set.add("Grapes")
+
+# Remove from set
+fruits_set.remove("Oranges")
+
+print(fruits_set)
