@@ -114,3 +114,71 @@ print(set_exercise.update({"X", "Y", "Z"}))
 print(len(set_exercise))
 
 print(set_exercise)
+
+
+# ------------------------------------------ DICTIONARY ------------------------------------------
+
+d = { 
+    3462: 'Artificial Intelligence', 
+    3468: 'Software Engineering Technician', 
+    3469: 'Software Engineering Technology', 
+    3472: 'Artificial Intelligence (FT)', 
+    3478: 'Software Engineering Technician (FT)', 
+    3528: 'Health Informatics Technology (FT)', 
+    3609: 'Game - Programming', 
+    3668: 'Health Informatics Technology', 
+    3679: 'Game - Programming (FT)'
+    }
+
+print(d)
+
+print(d.keys())
+print(d.values())
+
+print(d[3462])
+print(d.get(3462))
+
+
+# ------------------------------------------ ITERATING A COLLECTION ------------------------------------------
+
+for set_item in set_exercise:
+    print(set_item)
+
+for tuple_item in tuple_exercise:
+    print(tuple_item)
+
+for dict_item in d:
+    print(dict_item)
+
+
+# ------------------------------------------ CONVERSIONS ------------------------------------------
+
+# ------------------------------------------ SET CONVERSIONS ------------------------------------------
+
+tuple_to_set = set(tuple_exercise)
+list_to_set = set(list_exercise)
+dict_to_set = set(d)
+
+print(tuple_to_set)
+print(list_to_set)
+print(dict_to_set)
+
+# ------------------------------------------ TUPLE CONVERSIONS ------------------------------------------
+
+set_to_tuple = tuple(set_exercise)
+list_to_tuple = tuple(list_exercise)
+dict_to_tuple = tuple(d)
+
+print(set_to_tuple)
+print(list_to_tuple)
+print(dict_to_tuple)
+
+# ------------------------------------------ LIST CONVERSIONS ------------------------------------------
+
+set_to_list = list(set_exercise)
+tuple_to_list = list(list_exercise)
+dict_to_list = list(d)
+
+print(set_to_list)
+print(tuple_to_list)
+print(dict_to_list)
