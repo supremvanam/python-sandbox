@@ -1,4 +1,5 @@
 #imports and variables
+import collections
 from random import randint
 
 #the following variable will be used in the rest of the exercise
@@ -7,3 +8,43 @@ instructor = 'narendra pershad'
 harry = "You've gotta ask yourself a question: do I feel lucky? …well, do ya, punk?"
 numbers = [randint(5, 10) for _ in range(20)]
 
+# create a list from the variable 'harry' using the split() method 
+# of the string class and print it
+list_exercise = harry.split()
+print(list_exercise)
+
+# use the append() method once to add 'Eastwood' to the end of the  list
+# use the insert() method to add 'Clint' at the start of the  list
+# use the remove() method to remove 'question' from the list
+# use the extend() method to add 'Dirty' and 'Harry' to the end of the list
+# print the final list
+
+list_exercise.append("Eastwood")
+list_exercise.insert(0, "Clint")
+list_exercise.remove("question:")
+list_exercise.extend(["Dirty", "Harry"])
+print(list_exercise)
+
+
+# use the sort() method to order the  list
+# print the list
+# use the reverse() method to reverse the list
+# print the final list
+
+list_exercise.sort()
+print(list_exercise)
+list_exercise.reverse()
+print(list_exercise)
+
+
+# write the statement to produced the following lines of output
+
+## There are 2 do's in the list
+## You can find "ask" at index 9 of the list
+## There are 17 elements in the list
+
+do_repetition = collections.Counter(list_exercise)["do"]
+
+print(f"There are {do_repetition} do's in the list")
+print(f'You can find "ask" at index {list_exercise.index("ask")} of the list')
+print(f'There are {len(list_exercise)} elements in the list')
