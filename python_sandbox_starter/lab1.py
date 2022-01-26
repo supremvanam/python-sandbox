@@ -3,14 +3,18 @@ import collections
 from operator import le
 from random import randint
 
-#the following variable will be used in the rest of the exercise
+print("This is my practice file. Please review the colab link for assignment submission")
+print("Colab Link: https://colab.research.google.com/drive/1RgSqX7fHT-8Jke8ac-9VdF-upYQ-k7T9?usp=sharing")
+
+
+#the following variables will be used in the rest of the exercise
 pm = 'justin pierre james trudeau'
 instructor = 'narendra pershad'
 harry = "You've gotta ask yourself a question: do I feel lucky? …well, do ya, punk?"
 numbers = [randint(5, 10) for _ in range(20)]
 
 
-# ------------------------------------------ LIST ------------------------------------------
+print("------------------------------------------ LIST ------------------------------------------")
 
 # create a list from the variable 'harry' using the split() method 
 # of the string class and print it
@@ -53,7 +57,7 @@ print(f"There are {do_repetition} do's in the list")
 print(f'You can find "ask" at index {list_exercise.index("ask")} of the list')
 print(f'There are {len(list_exercise)} elements in the list')
 
-# ------------------------------------------ TUPLE ------------------------------------------
+print("------------------------------------------ TUPLE ------------------------------------------")
 
 #create a tuple from the variable pm and print it
 # pm = 'justin pierre james trudeau'
@@ -84,7 +88,7 @@ print(f"The third element of this tuple is {tuple_exercise[3]}")
 print(f"The third element of this tuple is {tuple_exercise[5]}")
 
 
-# ------------------------------------------ SET ------------------------------------------
+print("------------------------------------------ SET ------------------------------------------")
 
 # create a set from the variable 'instructor' and print it
 # pm = 'justin pierre james trudeau'
@@ -116,7 +120,7 @@ print(len(set_exercise))
 print(set_exercise)
 
 
-# ------------------------------------------ DICTIONARY ------------------------------------------
+print("------------------------------------------ DICTIONARY ------------------------------------------")
 
 d = { 
     3462: 'Artificial Intelligence', 
@@ -139,7 +143,7 @@ print(d[3462])
 print(d.get(3462))
 
 
-# ------------------------------------------ ITERATING A COLLECTION ------------------------------------------
+print("------------------------------------------ ITERATING OVER A COLLECTION ------------------------------------------")
 
 for set_item in set_exercise:
     print(set_item)
@@ -151,9 +155,9 @@ for dict_item in d:
     print(dict_item)
 
 
-# ------------------------------------------ CONVERSIONS ------------------------------------------
+print("------------------------------------------ CONVERSIONS ------------------------------------------")
 
-# ------------------------------------------ SET CONVERSIONS ------------------------------------------
+print("------------------------------------------ SET CONVERSIONS ------------------------------------------")
 
 tuple_to_set = set(tuple_exercise)
 list_to_set = set(list_exercise)
@@ -163,7 +167,7 @@ print(tuple_to_set)
 print(list_to_set)
 print(dict_to_set)
 
-# ------------------------------------------ TUPLE CONVERSIONS ------------------------------------------
+print("------------------------------------------ TUPLE CONVERSIONS ------------------------------------------")
 
 set_to_tuple = tuple(set_exercise)
 list_to_tuple = tuple(list_exercise)
@@ -173,7 +177,7 @@ print(set_to_tuple)
 print(list_to_tuple)
 print(dict_to_tuple)
 
-# ------------------------------------------ LIST CONVERSIONS ------------------------------------------
+print("------------------------------------------ LIST CONVERSIONS ------------------------------------------")
 
 set_to_list = list(set_exercise)
 tuple_to_list = list(list_exercise)
@@ -184,15 +188,13 @@ print(tuple_to_list)
 print(dict_to_list)
 
 
-# ------------------------------------------ ENUMERATE FUNCTION ------------------------------------------
-
 print("------------------------------------------ ENUMERATE FUNCTION ------------------------------------------")
 print(list(enumerate(set_exercise)))
 print(list(enumerate(tuple_exercise)))
 print(list(enumerate(list_exercise)))
-print(enumerate(d))
+print(list(enumerate(d)))
 
-print("------------------------------------------ NEW ENUMERATE FUNCTION ------------------------------------------")
+print("------------------------------------------ PRINT POSITION, KEY, VALUE OF DICTIONARY ------------------------------------------")
 
 for position, (key, value) in enumerate(d.items()):
     print(position, key, value)
